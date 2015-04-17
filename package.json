@@ -21,7 +21,6 @@
     "org.apache.cordova.media"
   ],
   "cordovaPlatforms": [
-    "android",
     "ios"
   ]
 }

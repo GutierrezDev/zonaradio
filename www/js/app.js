@@ -21,20 +21,19 @@ var myapp= angular.module('cosita', ['ionic'])
 
 
 myapp.controller('MainController',function($scope, $ionicLoading) {
- 
-       $scope.play = function(src,vBul) {
+
+    $scope.play = function (src, vBul) {
         var media = new Media(src, mediaStatusCallback, mediaStatusCallback, mediaStatusCallback);
 
         alert("Estoy aqui " + " con este " + vBul);
-        if(vBul==null)
-        {
+        if (vBul == null) {
             media.play();
-            $scope.media= media;
-        //$cordovaMedia.play(media);
+            $scope.media = media;
+            //$cordovaMedia.play(media);
         }
-        else{
+        else {
             alert("Stop " + media);
-        media.stop();
+            media.stop();
     }//end stop
         
          
